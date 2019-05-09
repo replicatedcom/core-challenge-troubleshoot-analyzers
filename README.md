@@ -8,12 +8,9 @@ The following insights should be extracted from a bundle:
 
 - Host OS
 - Host OS version
-- Time the host has been running
 - Number of cores
-- Load average over 15 minutes
-- Disk usage on the root device
-- Inode usage on the root device
-- Total memory
+- Load average in seconds over the past 15 minutes
+- Disk usage in bytes on the root device
 - Docker version
 - Docker storage driver
 
