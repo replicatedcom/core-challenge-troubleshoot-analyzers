@@ -19,9 +19,9 @@ We have included a sample bundle in this project. The following command can be r
 ```bash
 docker run -it --rm \
     --name support-bundle \
-    --volume $PWD:/out \
-    --volume /var/run/docker.sock:/var/run/docker.sock \
-    --net host --pid host --workdir /out  \
+    -v $PWD:/out \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    --net host --pid host -w /out  \
     -e HTTP_PROXY -e HTTPS_PROXY -e NO_PROXY \
     replicated/support-bundle \
     generate --no-upload
