@@ -9,7 +9,7 @@ The following insights should be extracted from a bundle:
 - Host OS
 - Host OS version
 - Number of cores
-- Load average in seconds over the past 15 minutes
+- The 15 minute load average
 - Disk usage in bytes on the root device
 - Docker version
 - Docker storage driver
